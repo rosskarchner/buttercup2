@@ -1,0 +1,93 @@
+
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ admin, power ]
+
+### EVENT TYPES
+
+[eventtypes]
+export = system
+
+
+### PROPS
+
+[props]
+export = system
+
+
+### TRANSFORMS
+
+[transforms]
+export = system
+
+
+### LOOKUPS
+
+[lookups]
+export = system
+
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+[app/ui]
+version = 8.1.0
+modtime = 1618253109.452688000
+
+[app/launcher]
+version = 8.1.0
+modtime = 1618253109.453478000
+
+[]
+access = read : [ * ], write : [ admin, dev ]
+export = none
+version = 8.1.0
+modtime = 1618253135.124384000
+
+[nav/default]
+version = 8.1.0
+modtime = 1618253448.762795000
+
+[views/buttercup_games_sales]
+owner = admin
+version = 8.1.0
+modtime = 1618336997.773661000
+
+[props/sales%3Aaddons/LOOKUP-BCG%20products]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618256972.206147000
+
+[eventtypes/bcg_mtx_purchases]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618257115.206490000
+
+[tags/eventtype%3Dbcg_mtx_purchases]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618257115.208062000
+
+[eventtypes/bcg_online_purchases]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618257123.565047000
+
+[tags/eventtype%3Dbcg_online_purchases]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618257123.571777000
+
+[props/sales%3Aaddons/FIELDALIAS-bcg_mtx_aliases]
+export = none
+owner = admin
+version = 8.1.0
+modtime = 1618257218.920822000
